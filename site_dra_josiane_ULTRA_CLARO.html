@@ -1,0 +1,1468 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Dra. Josiane Ferreira | Odontologia em Barra Mansa - RJ</title>
+
+  <!-- SEO / Social -->
+  <meta name="description" content="Odontologia em Barra Mansa - RJ. Atendimento humanizado, tecnologia, clínica geral, estética dental, odontopediatria, implantes, prótese e prevenção. Agende pelo WhatsApp." />
+  <meta property="og:title" content="Dra. Josiane Ferreira | Odontologia em Barra Mansa - RJ" />
+  <meta property="og:description" content="Atendimento odontológico com excelência, cuidado e tecnologia. Agende sua consulta pelo WhatsApp." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta name="theme-color" content="#0b3a6b" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..900&family=Playfair+Display:wght@500..800&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <style>
+    :root{
+      --bg: #f5fbff;
+      --surface: rgba(255,255,255,.75);
+      --surface2: rgba(255,255,255,.60);
+      --card: rgba(255,255,255,.86);
+      --stroke: rgba(11,27,42,.12);
+      --text: #0b1b2a;
+      --muted: rgba(11,27,42,.72);
+
+      --ink: #0f172a;
+      --ink2:#1f2937;
+      --paper:#ffffff;
+      --paper2:#f7fafc;
+
+      --primary:#2563eb;
+      --primary2:#06b6d4;
+      --accent:#14b8a6;
+      --accent2:#22c55e;
+
+      --shadow: 0 12px 30px rgba(2, 48, 71, .12);
+      --shadow2: 0 22px 55px rgba(2, 48, 71, .10);
+
+      --radius: 18px;
+      --radius2: 26px;
+
+      --container: 1140px;
+    }
+
+    *{ box-sizing:border-box; margin:0; padding:0; }
+    html{ scroll-behavior:smooth; }
+    body{
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      color: var(--ink);
+      background: var(--paper2);
+      overflow-x:hidden;
+    }
+
+    /* Utility */
+    .container{ max-width: var(--container); margin:0 auto; padding:0 20px; }
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center; gap:.6rem;
+      padding: 14px 18px;
+      border-radius: 999px;
+      text-decoration:none;
+      font-weight: 700;
+      letter-spacing: .2px;
+      transition: transform .2s ease, box-shadow .2s ease, background .2s ease, opacity .2s ease;
+      border: 1px solid transparent;
+      cursor:pointer;
+      user-select:none;
+      white-space:nowrap;
+    }
+    .btn:focus{ outline: 3px solid rgba(11,95,255,.25); outline-offset: 3px; }
+    .btn-primary{
+      color:white;
+      background: linear-gradient(135deg, var(--accent2), var(--accent));
+      box-shadow: 0 10px 22px rgba(34,197,94,.25);
+    }
+    .btn-primary:hover{ transform: translateY(-2px); box-shadow: 0 18px 30px rgba(34,197,94,.28); }
+    .btn-ghost{
+      color: rgba(255,255,255,.92);
+      background: rgba(255,255,255,.08);
+      border-color: rgba(255,255,255,.16);
+      backdrop-filter: blur(10px);
+    }
+    .btn-ghost:hover{ transform: translateY(-2px); background: rgba(255,255,255,.12); }
+
+    .pill{
+      display:inline-flex; align-items:center; gap:.5rem;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.10);
+      border: 1px solid rgba(255,255,255,.14);
+      color: rgba(255,255,255,.88);
+      backdrop-filter: blur(12px);
+      font-size:.9rem;
+    }
+
+    /* Header (glass + blur) */
+    .header{
+      position: fixed; inset: 14px 0 auto 0;
+      z-index: 1200;
+      pointer-events:none;
+    }
+    .nav{
+      pointer-events:auto;
+      width: min(var(--container), calc(100% - 28px));
+      margin: 0 auto;
+      padding: 12px 14px;
+      border-radius: 999px;
+      background: rgba(10,18,32,.45);
+      border: 1px solid rgba(255,255,255,.16);
+      box-shadow: 0 10px 32px rgba(0,0,0,.22);
+      backdrop-filter: blur(16px);
+      display:flex; align-items:center; justify-content:space-between;
+      gap: 14px;
+    }
+    .brand{
+      display:flex; align-items:center; gap:.65rem;
+      color: white; text-decoration:none;
+      font-weight: 800;
+      letter-spacing: .2px;
+      padding: 8px 10px;
+      border-radius: 999px;
+    }
+    .brand i{ font-size: 1.05rem; }
+    .brand span{ display:block; line-height:1.1; }
+    .brand small{ display:block; font-weight:600; opacity:.78; font-size:.78rem; margin-top:2px; }
+
+    .menu{ display:flex; gap: 12px; align-items:center; }
+    .menu a{
+      color: rgba(255,255,255,.82);
+      text-decoration:none;
+      font-weight:700;
+      font-size:.93rem;
+      padding: 10px 12px;
+      border-radius: 999px;
+      transition: background .2s ease, color .2s ease, transform .2s ease;
+    }
+    .menu a:hover{ background: rgba(255,255,255,.10); color:white; transform: translateY(-1px); }
+    .menu a.active{ background: rgba(255,255,255,.14); color:white; }
+
+    .nav-actions{ display:flex; gap: 10px; align-items:center; }
+
+    .burger{
+      display:none;
+      width: 42px; height: 42px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,.18);
+      background: rgba(255,255,255,.08);
+      color:white;
+      align-items:center; justify-content:center;
+      backdrop-filter: blur(10px);
+    }
+
+    /* Hero */
+    .hero{
+      position:relative;
+      min-height: 92vh;
+      padding: 120px 0 70px;
+      color: var(--text);
+      background:
+        radial-gradient(1100px 600px at 20% 15%, rgba(6,182,212,.18), transparent 60%),
+        radial-gradient(900px 550px at 85% 20%, rgba(37,99,235,.18), transparent 55%),
+        radial-gradient(900px 600px at 60% 85%, rgba(20,184,166,.16), transparent 55%),
+        linear-gradient(180deg, #f5fbff 0%, #eaf6ff 55%, #ffffff 100%);
+      overflow:hidden;
+    }
+    .hero::before{
+      content:"";
+      position:absolute; inset:-2px;
+      background:
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'%3E%3Cdefs%3E%3Cpattern id='p' width='12' height='12' patternUnits='userSpaceOnUse'%3E%3Ccircle cx='1.5' cy='1.5' r='1.2' fill='rgba(255,255,255,0.08)'/%3E%3C/pattern%3E%3C/defs%3E%3Crect width='120' height='120' fill='url(%23p)'/%3E%3C/svg%3E");
+      opacity: .5;
+      mix-blend-mode: overlay;
+      pointer-events:none;
+    }
+    .hero-grid{
+      display:grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 34px;
+      align-items:center;
+      position:relative;
+      z-index:1;
+    }
+
+    .kicker{
+      display:flex;
+      gap: 10px;
+      flex-wrap:wrap;
+      margin-bottom: 16px;
+    }
+
+    .hero h1{
+      font-family: "Playfair Display", serif;
+      font-weight: 750;
+      line-height: 1.03;
+      font-size: clamp(2.2rem, 4.2vw, 3.5rem);
+      letter-spacing: -0.6px;
+      margin-bottom: 14px;
+    }
+    .hero h1 .grad{
+      background: linear-gradient(90deg, #c7f9ff, #a7c8ff, #b8fff0);
+      -webkit-background-clip:text;
+      background-clip:text;
+      color: transparent;
+    }
+    .hero p{
+      color: rgba(255,255,255,.78);
+      font-size: 1.06rem;
+      line-height: 1.7;
+      max-width: 54ch;
+    }
+
+    .hero-actions{ display:flex; gap: 12px; flex-wrap:wrap; margin-top: 22px; }
+
+    .stats{
+      display:flex; gap: 10px; flex-wrap:wrap;
+      margin-top: 18px;
+    }
+    .stat{
+      background: rgba(255,255,255,.08);
+      border: 1px solid rgba(255,255,255,.14);
+      border-radius: 16px;
+      padding: 12px 14px;
+      min-width: 165px;
+      backdrop-filter: blur(12px);
+    }
+    .stat b{ display:block; font-size: 1.05rem; color: rgba(255,255,255,.92); }
+    .stat span{ display:block; font-size: .88rem; color: rgba(255,255,255,.68); margin-top: 2px; }
+
+    /* Right hero card (video/photo) */
+    .hero-card{
+      background: rgba(255,255,255,.06);
+      border: 1px solid rgba(255,255,255,.16);
+      border-radius: var(--radius2);
+      padding: 14px;
+      box-shadow: var(--shadow2);
+      backdrop-filter: blur(18px);
+      position:relative;
+      overflow:hidden;
+    }
+    .hero-card::after{
+      content:"";
+      position:absolute; inset:-40%;
+      background: radial-gradient(circle at 35% 35%, rgba(255,255,255,.10), transparent 55%);
+      transform: rotate(10deg);
+      pointer-events:none;
+    }
+    .portrait{
+      width:100%;
+      aspect-ratio: 4/4.6;
+      border-radius: calc(var(--radius2) - 8px);
+      overflow:hidden;
+      position:relative;
+      background: rgba(255,255,255,.04);
+      border: 1px solid rgba(255,255,255,.10);
+    }
+    .portrait img{
+      width:100%; height:100%;
+      object-fit: cover;
+      transform: scale(1.02);
+      filter: saturate(1.05) contrast(1.02);
+    }
+    .portrait .badge{
+      position:absolute;
+      left: 12px; bottom: 12px;
+      display:flex; gap:10px; align-items:center;
+      padding: 10px 12px;
+      border-radius: 999px;
+      background: rgba(10,18,32,.55);
+      border: 1px solid rgba(255,255,255,.18);
+      backdrop-filter: blur(16px);
+      color: rgba(255,255,255,.86);
+      font-weight: 700;
+      font-size: .92rem;
+    }
+    .portrait .badge i{ color: #a7f3d0; }
+
+    .card-row{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-top: 12px;
+      position:relative;
+      z-index:1;
+    }
+    .mini{
+      padding: 12px 12px;
+      border-radius: 16px;
+      background: rgba(255,255,255,.06);
+      border: 1px solid rgba(255,255,255,.14);
+      backdrop-filter: blur(12px);
+      color: rgba(255,255,255,.82);
+    }
+    .mini b{ display:block; font-size:.98rem; }
+    .mini span{ display:block; font-size:.86rem; opacity:.78; margin-top: 4px; }
+
+    /* Section base */
+    section{ padding: 86px 0; }
+    .section-title{
+      display:flex; align-items:flex-end; justify-content:space-between;
+      gap: 18px;
+      margin-bottom: 26px;
+    }
+    .section-title h2{
+      font-family: "Playfair Display", serif;
+      font-size: clamp(1.7rem, 2.7vw, 2.35rem);
+      letter-spacing: -0.4px;
+      color: var(--ink);
+    }
+    .section-title p{
+      color: #475569;
+      max-width: 62ch;
+      line-height: 1.7;
+    }
+
+    /* About */
+    .about{
+      background: linear-gradient(180deg, #f7fafc 0%, #ffffff 100%);
+    }
+    .about-grid{
+      display:grid;
+      grid-template-columns: 1.05fr .95fr;
+      gap: 28px;
+      align-items:center;
+    }
+    .about-card{
+      background: white;
+      border-radius: var(--radius2);
+      border: 1px solid #e7eef7;
+      box-shadow: 0 18px 40px rgba(2,6,23,.08);
+      padding: 22px;
+    }
+    .about-card p{ color:#334155; line-height:1.75; margin-top: 12px; }
+    .about-card .chips{ display:flex; gap: 10px; flex-wrap:wrap; margin-top: 14px; }
+    .chip{
+      display:inline-flex; align-items:center; gap: .5rem;
+      padding: 10px 12px;
+      border-radius: 999px;
+      background: #f1f5f9;
+      border: 1px solid #e2e8f0;
+      color:#0f172a;
+      font-weight: 700;
+      font-size: .9rem;
+    }
+    .chip i{ color: #0b5fff; }
+
+    .photo-stack{
+      position:relative;
+      min-height: 420px;
+    }
+    .photo-stack .p1, .photo-stack .p2{
+      position:absolute;
+      border-radius: var(--radius2);
+      overflow:hidden;
+      box-shadow: 0 26px 60px rgba(2,6,23,.15);
+      border: 1px solid rgba(15,23,42,.08);
+      background:white;
+    }
+    .photo-stack .p1{ width: 82%; right:0; top:0; transform: rotate(2deg); }
+    .photo-stack .p2{ width: 70%; left:0; bottom:0; transform: rotate(-2.5deg); }
+    .photo-stack img{ width:100%; height:100%; object-fit: cover; display:block; }
+
+    /* Highlights (like "mídia/case") */
+    .highlights{
+      background: linear-gradient(180deg, #ffffff 0%, #f7fafc 100%);
+    }
+    .logo-strip{
+      display:flex; align-items:center; justify-content:space-between;
+      gap: 12px;
+      padding: 16px 18px;
+      border-radius: 999px;
+      background: #ffffff;
+      border: 1px solid #e7eef7;
+      box-shadow: 0 12px 28px rgba(2,6,23,.06);
+      overflow-x:auto;
+      scrollbar-width:none;
+    }
+    .logo-strip::-webkit-scrollbar{ display:none; }
+    .logo{
+      display:flex; align-items:center; gap: 10px;
+      padding: 10px 14px;
+      border-radius: 999px;
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      color:#0f172a;
+      font-weight: 800;
+      white-space:nowrap;
+      font-size: .95rem;
+    }
+    .logo i{ color: #0b5fff; }
+
+    .case-grid{
+      display:grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 18px;
+      margin-top: 18px;
+      align-items: stretch;
+    }
+    .case{
+      border-radius: var(--radius2);
+      overflow:hidden;
+      border: 1px solid #e7eef7;
+      box-shadow: 0 20px 45px rgba(2,6,23,.08);
+      background:white;
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      min-height: 320px;
+    }
+    .case .media{
+      position:relative;
+      overflow:hidden;
+      background: #0b5fff;
+    }
+    .case .media img{
+      width:100%; height:100%;
+      object-fit: cover;
+      filter: saturate(1.05) contrast(1.05);
+      transform: scale(1.02);
+    }
+    .case .content{
+      padding: 22px;
+      display:flex; flex-direction:column; justify-content:center;
+      gap: 10px;
+    }
+    .case h3{ font-size: 1.2rem; color:#0f172a; }
+    .case p{ color:#334155; line-height:1.75; }
+    .case ul{ margin-top: 6px; padding-left: 18px; color:#334155; line-height:1.7; }
+    .case li{ margin: 6px 0; }
+    .side-cards{
+      display:grid;
+      gap: 12px;
+    }
+    .side{
+      background: white;
+      border-radius: var(--radius2);
+      border: 1px solid #e7eef7;
+      box-shadow: 0 16px 36px rgba(2,6,23,.07);
+      padding: 18px;
+    }
+    .side b{ display:block; font-size: 1.02rem; color:#0f172a; }
+    .side p{ margin-top: 8px; color:#334155; line-height:1.7; }
+
+    /* Services */
+    .services{
+      background: white;
+    }
+    .grid{
+      display:grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 14px;
+      margin-top: 18px;
+    }
+    .service{
+      grid-column: span 4;
+      background: #ffffff;
+      border: 1px solid #e7eef7;
+      border-radius: var(--radius2);
+      padding: 18px 18px;
+      box-shadow: 0 14px 32px rgba(2,6,23,.06);
+      transition: transform .2s ease, box-shadow .2s ease;
+      position:relative;
+      overflow:hidden;
+    }
+    .service::before{
+      content:"";
+      position:absolute; inset:-60%;
+      background: radial-gradient(circle at 35% 35%, rgba(11,95,255,.14), transparent 55%);
+      transform: rotate(10deg);
+      opacity:.9;
+      pointer-events:none;
+    }
+    .service:hover{ transform: translateY(-4px); box-shadow: 0 22px 48px rgba(2,6,23,.10); }
+    .service .top{
+      display:flex; align-items:center; gap: 12px;
+      position:relative; z-index:1;
+    }
+    .icon{
+      width: 46px; height: 46px;
+      border-radius: 14px;
+      display:flex; align-items:center; justify-content:center;
+      background: linear-gradient(135deg, rgba(11,95,255,.14), rgba(0,212,255,.10));
+      border: 1px solid rgba(11,95,255,.18);
+      color: #0b5fff;
+      font-size: 1.15rem;
+    }
+    .service h3{ font-size: 1.08rem; color:#0f172a; }
+    .service p{ margin-top: 10px; color:#334155; line-height:1.7; position:relative; z-index:1; }
+
+    /* Testimonials */
+    .testimonials{
+      background: linear-gradient(180deg, #f7fafc 0%, #ffffff 100%);
+    }
+    .slider{
+      position:relative;
+      border-radius: var(--radius2);
+      border: 1px solid #e7eef7;
+      background: white;
+      box-shadow: 0 18px 40px rgba(2,6,23,.07);
+      overflow:hidden;
+    }
+    .slides{
+      display:flex;
+      transition: transform .55s cubic-bezier(.2,.9,.2,1);
+      will-change: transform;
+    }
+    .slide{
+      min-width: 100%;
+      padding: 26px 22px;
+      display:grid;
+      grid-template-columns: 1fr;
+      gap: 14px;
+    }
+    .quote{
+      font-size: 1.05rem;
+      line-height: 1.8;
+      color:#0f172a;
+    }
+    .who{ display:flex; align-items:center; justify-content:space-between; gap: 10px; flex-wrap:wrap; }
+    .who b{ color:#0f172a; }
+    .stars{ color: #f59e0b; }
+    .navbtns{
+      position:absolute; inset: auto 12px 12px auto;
+      display:flex; gap: 10px;
+    }
+    .navbtn{
+      width: 44px; height: 44px;
+      border-radius: 999px;
+      border: 1px solid #e2e8f0;
+      background: rgba(255,255,255,.92);
+      display:flex; align-items:center; justify-content:center;
+      cursor:pointer;
+      transition: transform .2s ease, box-shadow .2s ease;
+    }
+    .navbtn:hover{ transform: translateY(-2px); box-shadow: 0 10px 20px rgba(2,6,23,.12); }
+
+    .dots{
+      display:flex; gap: 8px;
+      justify-content:center;
+      margin-top: 14px;
+    }
+    .dot{
+      width: 10px; height: 10px;
+      border-radius: 999px;
+      background: #e2e8f0;
+      border: 1px solid #cbd5e1;
+      cursor:pointer;
+    }
+    .dot.active{ background: #0b5fff; border-color: rgba(11,95,255,.5); }
+
+    /* Contact */
+    .contact{
+      background: #f0f9ff;
+      color: #0b1b2a;
+      position:relative;
+      overflow:hidden;
+    }
+    .contact::before{
+      content:"";
+      position:absolute; inset:-2px;
+      background:
+        radial-gradient(900px 450px at 20% 20%, rgba(0,212,255,.18), transparent 60%),
+        radial-gradient(800px 520px at 80% 30%, rgba(20,184,166,.16), transparent 55%),
+        radial-gradient(900px 520px at 60% 90%, rgba(11,95,255,.18), transparent 55%);
+      pointer-events:none;
+    }
+    .contact .section-title h2{ color: rgba(255,255,255,.96); }
+    .contact .section-title p{ color: rgba(255,255,255,.72); }
+    .contact-grid{
+      position:relative;
+      z-index:1;
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      align-items: start;
+      margin-top: 18px;
+    }
+    .info{
+      background: rgba(255,255,255,.06);
+      border: 1px solid rgba(255,255,255,.14);
+      border-radius: var(--radius2);
+      padding: 18px;
+      backdrop-filter: blur(16px);
+      box-shadow: 0 20px 45px rgba(0,0,0,.22);
+    }
+    .row{
+      display:flex; gap: 12px;
+      padding: 12px 10px;
+      border-radius: 16px;
+      border: 1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.04);
+    }
+    .row i{ width: 26px; margin-top: 2px; color: rgba(199,249,255,.92); }
+    .row h4{ font-size: .98rem; margin-bottom: 4px; }
+    .row p{ color: rgba(255,255,255,.72); line-height:1.65; }
+    .cta{
+      background: linear-gradient(135deg, rgba(34,197,94,.18), rgba(20,184,166,.12));
+      border: 1px solid rgba(34,197,94,.22);
+      border-radius: var(--radius2);
+      padding: 18px;
+      box-shadow: 0 20px 45px rgba(0,0,0,.22);
+      backdrop-filter: blur(16px);
+    }
+    .cta h3{ font-family:"Playfair Display", serif; font-size: 1.55rem; }
+    .cta p{ color: rgba(255,255,255,.75); line-height:1.7; margin-top: 8px; }
+    .cta .btn{ margin-top: 14px; width: 100%; }
+
+    /* Footer */
+    footer{
+      padding: 26px 0 80px;
+      background: #ffffff;
+      color: rgba(11,27,42,.72);
+      border-top: 1px solid rgba(255,255,255,.10);
+    }
+    .foot{
+      display:flex; align-items:center; justify-content:space-between;
+      gap: 14px; flex-wrap:wrap;
+    }
+    .social a{
+      color: rgba(255,255,255,.86);
+      font-size: 1.25rem;
+      margin-left: 12px;
+      text-decoration:none;
+      transition: opacity .2s ease, transform .2s ease;
+    }
+    .social a:hover{ opacity:1; transform: translateY(-2px); }
+
+    /* WhatsApp floating + mobile bottom bar */
+    .whats-float{
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      width: 60px; height: 60px;
+      border-radius: 999px;
+      background: #25d366;
+      color: white;
+      display:flex; align-items:center; justify-content:center;
+      box-shadow: 0 16px 30px rgba(37,211,102,.32);
+      text-decoration:none;
+      z-index: 1400;
+      transition: transform .2s ease, box-shadow .2s ease;
+    }
+    .whats-float:hover{ transform: translateY(-3px); box-shadow: 0 22px 40px rgba(37,211,102,.38); }
+
+    .bottom-bar{
+      position: fixed;
+      left: 12px; right: 12px; bottom: 12px;
+      z-index: 1350;
+      display:none;
+      gap: 10px;
+      padding: 10px;
+      border-radius: 16px;
+      background: rgba(10,18,32,.55);
+      border: 1px solid rgba(255,255,255,.16);
+      backdrop-filter: blur(16px);
+      box-shadow: 0 18px 45px rgba(0,0,0,.28);
+    }
+    .bottom-bar a{ flex:1; }
+    .btn-mini{
+      padding: 12px 14px;
+      border-radius: 14px;
+      font-weight: 800;
+      border: 1px solid rgba(255,255,255,.14);
+      background: rgba(255,255,255,.08);
+      color: rgba(255,255,255,.9);
+      text-decoration:none;
+      display:flex; align-items:center; justify-content:center; gap: 10px;
+    }
+    .btn-mini.primary{
+      background: linear-gradient(135deg, rgba(34,197,94,.95), rgba(20,184,166,.95));
+      border-color: rgba(34,197,94,.28);
+      color: white;
+    }
+
+    /* Scroll reveal */
+    .reveal{ opacity:0; transform: translateY(16px); transition: opacity .7s ease, transform .7s ease; }
+    .reveal.visible{ opacity:1; transform: translateY(0); }
+
+    /* Responsive */
+    @media (max-width: 980px){
+      .hero-grid{ grid-template-columns: 1fr; }
+      .hero{ padding-top: 130px; min-height: auto; }
+      .case-grid{ grid-template-columns: 1fr; }
+      .case{ grid-template-columns: 1fr; }
+      .about-grid{ grid-template-columns: 1fr; }
+      .photo-stack{ min-height: 420px; }
+      .service{ grid-column: span 6; }
+      .contact-grid{ grid-template-columns: 1fr; }
+      .menu{ display:none; }
+      .burger{ display:flex; }
+    }
+    @media (max-width: 640px){
+      section{ padding: 70px 0; }
+      .stat{ min-width: 150px; }
+      .service{ grid-column: span 12; }
+      .bottom-bar{ display:flex; }
+      .whats-float{ display:none; }
+    }
+
+    /* Mobile menu overlay */
+    .overlay{
+      position: fixed; inset:0;
+      background: rgba(2,6,23,.62);
+      z-index: 1600;
+      display:none;
+      backdrop-filter: blur(10px);
+    }
+    .overlay.open{ display:block; }
+    .sheet{
+      position:absolute;
+      left: 12px; right: 12px; top: 86px;
+      background: rgba(10,18,32,.65);
+      border: 1px solid rgba(255,255,255,.16);
+      border-radius: 18px;
+      padding: 12px;
+      box-shadow: 0 22px 60px rgba(0,0,0,.35);
+    }
+    .sheet a{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      padding: 14px 14px;
+      border-radius: 14px;
+      color: rgba(255,255,255,.9);
+      text-decoration:none;
+      font-weight: 800;
+      border: 1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.06);
+      margin-top: 10px;
+    }
+    .sheet a:first-child{ margin-top:0; }
+    .sheet a i{ opacity:.85; }
+
+    /* Respect reduced motion */
+    @media (prefers-reduced-motion: reduce){
+      html{ scroll-behavior:auto; }
+      .btn, .menu a, .service, .navbtn, .whats-float{ transition:none !important; }
+      .reveal{ opacity:1 !important; transform:none !important; }
+    }
+  
+    /* ===== Correção de contraste (layout claro) ===== */
+    .hero, .hero h1, .hero p, .hero .badge, .hero .subtitle, .hero .kpis, .hero .kpis *{
+      color: #0b1b2a !important;
+    }
+    footer, footer p, footer a, footer strong, footer li, footer small{
+      color: rgba(11,27,42,.78) !important;
+    }
+    footer a:hover{
+      color: #2563eb !important;
+    }
+
+  
+    /* ===== Caso real (Protocolo Total) ===== */
+    .grid-2{display:grid;grid-template-columns:1.1fr .9fr;gap:18px}
+    @media (max-width: 920px){.grid-2{grid-template-columns:1fr}}
+    .case-card h3{margin:0 0 6px;font-size:18px}
+    .case-steps{margin-top:14px;display:flex;flex-direction:column;gap:14px}
+    .case-step{display:flex;gap:12px;align-items:flex-start}
+    .case-step .dot{width:10px;height:10px;border-radius:999px;background:linear-gradient(135deg,var(--primary),var(--accent));margin-top:6px;flex:0 0 10px}
+    .case-step h4{margin:0 0 6px;font-size:14px;letter-spacing:.2px}
+    .case-step ul{margin:0;padding-left:18px}
+    .case-step li{margin:6px 0}
+    .checklist{list-style:none;margin:12px 0 0;padding:0;display:flex;flex-direction:column;gap:10px}
+    .checklist .check{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:8px;background:rgba(20,184,166,.14);color:#0b1b2a;margin-right:8px;font-weight:700}
+    .cta-box{margin-top:14px;padding:14px;border-radius:16px;border:1px solid rgba(11,27,42,.10);background:linear-gradient(180deg, rgba(37,99,235,.08), rgba(20,184,166,.06));}
+    .cta-box h4{margin:0 0 6px;font-size:14px}
+
+  
+/* ===== FORÇANDO PALETA CLARA ODONTOLOGIA (ALTA LEGIBILIDADE) ===== */
+:root{
+  --bg:#ffffff;
+  --surface:#ffffff;
+  --surface2:#f4f9fc;
+  --card:#ffffff;
+  --stroke:rgba(10,30,60,.10);
+  --text:#0a1e3c;
+  --muted:#4a6b88;
+  --primary:#2563eb;
+  --primary2:#06b6d4;
+  --accent:#14b8a6;
+  --accent2:#22c55e;
+}
+
+/* Texto global */
+body, p, li, span, small{
+  color: var(--text) !important;
+}
+
+/* HERO */
+.hero{
+  background: linear-gradient(180deg,#f4f9fc 0%,#ffffff 100%) !important;
+}
+.hero *{
+  color:#0a1e3c !important;
+}
+
+/* CARDS */
+.card{
+  background:#ffffff !important;
+  border:1px solid rgba(10,30,60,.10) !important;
+}
+
+/* SEÇÕES */
+section{
+  background:#ffffff !important;
+}
+
+/* MUTED */
+.muted{
+  color:#4a6b88 !important;
+}
+
+/* FOOTER */
+footer{
+  background:#f4f9fc !important;
+}
+footer *{
+  color:#0a1e3c !important;
+}
+
+</style>
+</head>
+
+<body>
+
+  <!-- Glass Header -->
+  <header class="header" aria-label="Cabeçalho">
+    <div class="nav" role="navigation">
+      <a class="brand" href="#inicio" aria-label="Ir para o início">
+        <i class="fa-solid fa-tooth"></i>
+        <span>
+          Dra. Josiane Ferreira
+          <small>Odontologia • Barra Mansa - RJ</small>
+        </span>
+      </a>
+
+      <nav class="menu" aria-label="Menu principal">
+        <a href="#sobre">Sobre</a>
+        <a href="#diferenciais">Diferenciais</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#depoimentos">Depoimentos</a>
+        <a href="#contato">Contato</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a class="btn btn-ghost" href="#contato" aria-label="Ver endereço e horário">
+          <i class="fa-regular fa-calendar"></i> Informações
+        </a>
+        <a class="btn btn-primary" href="https://wa.me/5524999545141?text=Olá, gostaria de agendar uma consulta!" target="_blank" rel="noopener" aria-label="Agendar pelo WhatsApp">
+          <i class="fa-brands fa-whatsapp"></i> Agendar
+        </a>
+
+        <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile overlay menu -->
+  <div class="overlay" id="overlay" aria-hidden="true">
+    <div class="sheet" role="dialog" aria-label="Menu">
+      <a href="#sobre" data-close><span>Sobre</span><i class="fa-solid fa-arrow-right"></i></a>
+      <a href="#diferenciais" data-close><span>Diferenciais</span><i class="fa-solid fa-arrow-right"></i></a>
+      <a href="#servicos" data-close><span>Serviços</span><i class="fa-solid fa-arrow-right"></i></a>
+      <a href="#depoimentos" data-close><span>Depoimentos</span><i class="fa-solid fa-arrow-right"></i></a>
+      <a href="#contato" data-close><span>Contato</span><i class="fa-solid fa-arrow-right"></i></a>
+      <a href="https://wa.me/5524999545141?text=Olá, gostaria de agendar uma consulta!" target="_blank" rel="noopener" data-close
+         style="border-color: rgba(34,197,94,.26); background: linear-gradient(135deg, rgba(34,197,94,.95), rgba(20,184,166,.95));">
+        <span>Agendar no WhatsApp</span><i class="fa-brands fa-whatsapp"></i>
+      </a>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <main id="inicio" class="hero" aria-label="Página inicial">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="reveal">
+          <div class="kicker">
+            <span class="pill"><i class="fa-solid fa-location-dot"></i> Barra Mansa • Sul Fluminense</span>
+            <span class="pill"><i class="fa-solid fa-shield-heart"></i> Atendimento humanizado</span>
+            <span class="pill"><i class="fa-solid fa-wand-magic-sparkles"></i> Estética e saúde</span>
+          </div>
+
+          <h1><span class="grad">Seu sorriso</span> com cuidado, tecnologia e confiança.</h1>
+          <p>
+            Odontologia com foco em prevenção, conforto e resultados naturais. Atendimento personalizado, em um ambiente acolhedor,
+            para você se sentir seguro(a) do começo ao fim.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="https://wa.me/5524999545141?text=Olá, gostaria de agendar uma consulta!" target="_blank" rel="noopener">
+              <i class="fa-brands fa-whatsapp"></i> Agendar consulta
+            </a>
+            <a class="btn btn-ghost" href="#servicos">
+              <i class="fa-solid fa-list-check"></i> Ver serviços
+            </a>
+          </div>
+
+          <div class="stats" aria-label="Destaques">
+            <div class="stat">
+              <b data-count="10">10+</b>
+              <span>Anos de experiência</span>
+            </div>
+            <div class="stat">
+              <b>Barra Mansa</b>
+              <span>Atendimento na região</span>
+            </div>
+            <div class="stat">
+              <b>WhatsApp</b>
+              <span>Agendamento rápido</span>
+            </div>
+          </div>
+        </div>
+
+        <aside class="hero-card reveal" aria-label="Cartão com foto">
+          <div class="portrait">
+            <!-- Troque esta imagem pela foto principal da doutora (recomendo foto vertical, bem iluminada) -->
+            <img src="https://i.imgur.com/jRnijhB.jpeg" alt="Foto da Dra. Josiane Ferreira" loading="eager" />
+            <div class="badge">
+              <i class="fa-solid fa-circle-check"></i>
+              Profissionalismo + acolhimento
+            </div>
+          </div>
+
+          <div class="card-row">
+            <div class="mini">
+              <b><i class="fa-solid fa-microscope"></i> Diagnóstico preciso</b>
+              <span>Planejamento claro e transparente.</span>
+            </div>
+            <div class="mini">
+              <b><i class="fa-solid fa-face-smile"></i> Estética dental</b>
+              <span>Resultados naturais e harmônicos.</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <!-- ABOUT -->
+  <section class="about" id="sobre" aria-label="Sobre">
+    <div class="container">
+      <div class="section-title reveal">
+        <div>
+          <h2>Sobre a Dra. Josiane</h2>
+          <p>
+            Uma profissional comprometida com excelência técnica e cuidado humano — para que você tenha segurança em cada etapa do tratamento.
+          </p>
+        </div>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card reveal">
+          <p>
+            A <strong>Dra. Josiane Ferreira</strong> atua há mais de <strong>10 anos</strong> em Barra Mansa e região, com foco em
+            prevenção, estética e reabilitação do sorriso.
+          </p>
+          <p>
+            Seu atendimento é baseado em escuta, explicação clara e um plano de tratamento construído junto com o paciente — sempre buscando conforto,
+            confiança e um resultado que combine com você.
+          </p>
+
+          <div class="chips" aria-label="Pilares do atendimento">
+            <span class="chip"><i class="fa-solid fa-hand-holding-heart"></i> Acolhimento</span>
+            <span class="chip"><i class="fa-solid fa-bullseye"></i> Precisão</span>
+            <span class="chip"><i class="fa-solid fa-shield"></i> Segurança</span>
+            <span class="chip"><i class="fa-solid fa-sparkles"></i> Estética</span>
+          </div>
+
+          <div style="margin-top: 16px;">
+            <a class="btn" style="background:#0b5fff;color:white;box-shadow:0 12px 24px rgba(11,95,255,.22);" href="#contato">
+              <i class="fa-solid fa-location-dot"></i> Ver endereço e horário
+            </a>
+          </div>
+        </div>
+
+        <div class="photo-stack reveal" aria-label="Fotos">
+          <!-- Você pode trocar as imagens por fotos reais da clínica (ideal: 2 imagens com boa iluminação) -->
+          <div class="p1" aria-hidden="true">
+            <img src="https://i.imgur.com/nTDI270.jpeg" alt="Ambiente e tecnologia" loading="lazy" />
+          </div>
+          <div class="p2" aria-hidden="true">
+            <img src="https://i.imgur.com/eMQTfX9.jpeg" alt="Atendimento humanizado" loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIFFERENTIALS / SOCIAL PROOF -->
+  <section class="highlights" id="diferenciais" aria-label="Diferenciais">
+    <div class="container">
+
+      <div class="section-title reveal">
+        <div>
+          <h2>Diferenciais que fazem diferença</h2>
+          <p>
+            Inspirado em sites médicos modernos, com foco em confiança: prova social, clareza do tratamento e chamada direta para o WhatsApp.
+          </p>
+        </div>
+      </div>
+
+      <div class="logo-strip reveal" aria-label="Selos">
+        <div class="logo"><i class="fa-solid fa-star"></i> Avaliações positivas</div>
+        <div class="logo"><i class="fa-solid fa-shield-check"></i> Ética e transparência</div>
+        <div class="logo"><i class="fa-solid fa-tooth"></i> Saúde + Estética</div>
+        <div class="logo"><i class="fa-solid fa-clock"></i> Agendamento rápido</div>
+        <div class="logo"><i class="fa-solid fa-heart"></i> Atendimento humanizado</div>
+      </div>
+
+      <div class="case-grid">
+        <div class="case reveal" aria-label="Caso real / exemplo">
+          <div class="media">
+            <!-- Troque por foto de “antes/depois” (se tiver autorização) ou uma foto de consultório/atendimento -->
+            <img src="https://i.imgur.com/ezephUx.jpeg" alt="Exemplo de caso clínico" loading="lazy" />
+          </div>
+          <div class="content">
+            <h3>Exemplo de jornada do paciente</h3>
+            <p>
+              Aqui você pode inserir um <strong>estudo de caso</strong> (bem parecido com o modelo da referência):
+              qual era a dor do paciente, o que foi feito e qual o resultado.
+            </p>
+            <ul>
+              <li><strong>Queixa:</strong> dor, estética, função mastigatória, etc.</li>
+              <li><strong>Plano:</strong> diagnóstico + opções + decisão compartilhada.</li>
+              <li><strong>Resultado:</strong> conforto, segurança e satisfação.</li>
+            </ul>
+            <a class="btn" style="background:#0f172a;color:white;border-color:#0f172a;" href="https://wa.me/5524999545141?text=Olá, gostaria de saber qual tratamento é ideal para mim." target="_blank" rel="noopener">
+              <i class="fa-brands fa-whatsapp"></i> Quero uma avaliação
+            </a>
+          </div>
+        </div>
+
+        <div class="side-cards">
+          <div class="side reveal">
+            <b><i class="fa-solid fa-comments"></i> Comunicação sem enrolação</b>
+            <p>Você entende o que será feito, por quê e quais alternativas existem. Transparência total.</p>
+          </div>
+          <div class="side reveal">
+            <b><i class="fa-solid fa-sparkles"></i> Resultado natural</b>
+            <p>Estética dental com foco em harmonia e saúde — sem “cara artificial”.</p>
+          </div>
+          <div class="side reveal">
+            <b><i class="fa-solid fa-shield-heart"></i> Segurança em primeiro lugar</b>
+            <p>Procedimentos com planejamento, cuidado e orientação pós-atendimento.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services" id="servicos" aria-label="Serviços">
+    <div class="container">
+      <div class="section-title reveal">
+        <div>
+          <h2>Serviços</h2>
+          <p>
+            Seleção de serviços com uma apresentação mais “premium” e moderna. Você pode trocar/renomear os cards conforme sua clínica.
+          </p>
+        </div>
+      </div>
+
+      <div class="grid" role="list">
+        <article class="service reveal" role="listitem">
+          <div class="top"><div class="icon"><i class="fa-solid fa-tooth"></i></div><h3>Clínica Geral</h3></div>
+          <p>Prevenção, tratamento de cáries, restaurações e acompanhamento da saúde bucal.</p>
+        </article>
+
+        <article class="service reveal" role="listitem">
+          <div class="top"><div class="icon"><i class="fa-solid fa-child"></i></div><h3>Odontopediatria</h3></div>
+          <p>Atendimento carinhoso para crianças, criando uma experiência leve e positiva.</p>
+        </article>
+
+        <article class="service reveal" role="listitem">
+          <div class="top"><div class="icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div><h3>Estética Dental</h3></div>
+          <p>Harmonia do sorriso: facetas, resinas estéticas e ajustes finos com naturalidade.</p>
+        </article>
+
+        <article class="service reveal" role="listitem">
+          <div class="top"><div class="icon"><i class="fa-solid fa-lightbulb"></i></div><h3>Clareamento</h3></div>
+          <p>Sorriso mais claro com técnicas seguras e orientação completa para manutenção.</p>
+        </article>
+
+        <article class="service reveal" role="listitem">
+          <div class="top"><div class="icon"><i class="fa-solid fa-screwdriver-wrench"></i></div><h3>Implantes</h3></div>
+          <p>Reposição de dentes com planejamento e foco em conforto, função e estética.</p>
+        </article>
+
+        <article class="service reveal" role="listitem">
+          <div class="top"><div class="icon"><i class="fa-solid fa-teeth-open"></i></div><h3>Próteses</h3></div>
+          <p>Reabilitação mastigatória e estética para melhorar qualidade de vida e confiança.</p>
+        </article>
+
+        <article class="service reveal" role="listitem">
+          <div class="top"><div class="icon"><i class="fa-solid fa-shield"></i></div><h3>Prevenção</h3></div>
+          <p>Limpeza, orientações e rotina de cuidados para evitar problemas no futuro.</p>
+        </article>
+
+        <article class="service reveal" role="listitem">
+          <div class="top"><div class="icon"><i class="fa-solid fa-x-ray"></i></div><h3>Diagnóstico</h3></div>
+          <p>Avaliação detalhada e decisões compartilhadas para indicar o melhor caminho.</p>
+        </article>
+
+        <article class="service reveal" role="listitem">
+          <div class="top"><div class="icon"><i class="fa-solid fa-heart"></i></div><h3>Atendimento Humanizado</h3></div>
+          <p>Cuidado personalizado, com atenção às necessidades e ao tempo de cada pessoa.</p>
+        </article>
+      </div>
+
+      <div style="margin-top: 18px;" class="reveal">
+        <a class="btn" style="background:#0b5fff;color:white;box-shadow:0 14px 28px rgba(11,95,255,.22);" href="https://wa.me/5524999545141?text=Olá, gostaria de saber valores e agenda disponível." target="_blank" rel="noopener">
+          <i class="fa-brands fa-whatsapp"></i> Ver agenda e valores no WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials" id="depoimentos" aria-label="Depoimentos">
+    <div class="container">
+      <div class="section-title reveal">
+        <div>
+          <h2>O que dizem os pacientes</h2>
+          <p>Formato tipo “carrossel” (bem parecido com sites médicos premium). Troque os textos pelos reais quando tiver.</p>
+        </div>
+      </div>
+
+      <div class="slider reveal" aria-label="Carrossel de depoimentos">
+        <div class="slides" id="slides">
+          <div class="slide" aria-label="Depoimento 1">
+            <div class="quote">“Fui muito bem atendida, tudo explicado com calma. Me senti segura do início ao fim.”</div>
+            <div class="who">
+              <div><b>Paciente</b> <span style="color:#64748b;">• Clínica Geral</span></div>
+              <div class="stars" aria-label="5 estrelas">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="slide" aria-label="Depoimento 2">
+            <div class="quote">“Clareamento ficou lindo e natural. Atendimento acolhedor e ambiente excelente!”</div>
+            <div class="who">
+              <div><b>Paciente</b> <span style="color:#64748b;">• Estética Dental</span></div>
+              <div class="stars" aria-label="5 estrelas">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="slide" aria-label="Depoimento 3">
+            <div class="quote">“Minha filha adorou! Atendimento com carinho e paciência. Recomendo muito.”</div>
+            <div class="who">
+              <div><b>Responsável</b> <span style="color:#64748b;">• Odontopediatria</span></div>
+              <div class="stars" aria-label="5 estrelas">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="navbtns">
+          <button class="navbtn" id="prev" aria-label="Anterior"><i class="fa-solid fa-arrow-left"></i></button>
+          <button class="navbtn" id="next" aria-label="Próximo"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+      </div>
+
+      <div class="dots" id="dots" aria-label="Indicadores do carrossel"></div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  
+  <section class="case" id="caso-real">
+    <div class="container">
+
+        <div class="section-title">
+          <span class="chip">Caso real</span>
+          <h2>Exemplo de jornada do paciente</h2>
+          <p>Um exemplo de como conduzimos o cuidado do início ao fim — com planejamento, segurança e resultado.</p>
+        </div>
+
+        <div class="grid-2">
+          <div class="card case-card">
+            <h3>Protocolo Total sobre implantes</h3>
+            <p class="muted"><strong>Paciente:</strong> mulher, 58 anos</p>
+            <div class="case-steps">
+              <div class="case-step">
+                <div class="dot"></div>
+                <div>
+                  <h4>Queixa</h4>
+                  <ul>
+                    <li>Dificuldade para mastigar alimentos mais firmes</li>
+                    <li>Dor recorrente e desconforto com prótese móvel</li>
+                    <li>Insatisfação estética e impacto na autoestima</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="case-step">
+                <div class="dot"></div>
+                <div>
+                  <h4>Plano</h4>
+                  <p>
+                    Realizamos avaliação clínica detalhada e exames de imagem. Indicamos o
+                    <strong>Protocolo Total sobre implantes</strong>, explicando alternativas, prazos, custos e cuidados.
+                    A decisão foi feita de forma <strong>compartilhada</strong>, alinhando expectativas e o melhor plano para a paciente.
+                  </p>
+                </div>
+              </div>
+
+              <div class="case-step">
+                <div class="dot"></div>
+                <div>
+                  <h4>Resultado</h4>
+                  <p>
+                    A paciente recuperou <strong>estabilidade</strong>, <strong>conforto</strong> e <strong>função mastigatória</strong>,
+                    com um sorriso natural e harmonioso. Relatou mais segurança para se alimentar, sorrir e se relacionar,
+                    com melhora marcante da qualidade de vida.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card case-aside">
+            <h3>O que esse caso mostra</h3>
+            <ul class="checklist">
+              <li><span class="check">✓</span> Diagnóstico preciso + planejamento</li>
+              <li><span class="check">✓</span> Opções claras e decisão compartilhada</li>
+              <li><span class="check">✓</span> Foco em conforto, estética e função</li>
+              <li><span class="check">✓</span> Acompanhamento e orientações pós</li>
+            </ul>
+
+            <div class="cta-box">
+              <h4>Quer avaliar se Protocolo Total é para você?</h4>
+              <p class="muted">Agende uma avaliação. Vamos entender seu caso e te orientar com segurança.</p>
+              <a class="btn primary" href="#contato">Agendar avaliação</a>
+            </div>
+          </div>
+        </div>
+
+    </div>
+  </section>
+<section class="contact" id="contato" aria-label="Contato">
+    <div class="container">
+      <div class="section-title reveal">
+        <div>
+          <h2>Contato e agendamento</h2>
+          <p>Sem formulário complicado: um clique e você já fala direto no WhatsApp com a clínica.</p>
+        </div>
+      </div>
+
+      <div class="contact-grid">
+        <div class="info reveal" aria-label="Informações">
+          <div class="row">
+            <i class="fa-solid fa-location-dot"></i>
+            <div>
+              <h4>Endereço</h4>
+              <p>
+                Av. Joaquim Leite, 160<br/>
+                Edifício Profissões Liberais - Sala 207<br/>
+                Barra Mansa - RJ
+              </p>
+            </div>
+          </div>
+
+          <div class="row" style="margin-top: 12px;">
+            <i class="fa-solid fa-clock"></i>
+            <div>
+              <h4>Horário</h4>
+              <p>Seg a Sex • 09:00–12:00 • 14:00–18:00</p>
+            </div>
+          </div>
+
+          <div class="row" style="margin-top: 12px;">
+            <i class="fa-brands fa-instagram"></i>
+            <div>
+              <h4>Instagram</h4>
+              <p>@josianeferreiraodonto</p>
+            </div>
+          </div>
+
+          <div class="row" style="margin-top: 12px;">
+            <i class="fa-solid fa-phone"></i>
+            <div>
+              <h4>WhatsApp</h4>
+              <p>(24) 99954-5141</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="cta reveal" aria-label="Agendar">
+          <h3>Agende em menos de 1 minuto</h3>
+          <p>
+            Clique no botão abaixo e envie uma mensagem. Se preferir, já escrevemos o texto para facilitar.
+          </p>
+          <a class="btn btn-primary" href="https://wa.me/5524999545141?text=Olá, gostaria de agendar uma consulta. Meu nome é ____ e minha disponibilidade é ____." target="_blank" rel="noopener">
+            <i class="fa-brands fa-whatsapp"></i> Agendar agora
+          </a>
+          <p style="margin-top: 12px; font-size: .92rem; color: rgba(255,255,255,.72);">
+            Dica: troque “____” pelas suas informações e pronto 🙂
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer aria-label="Rodapé">
+    <div class="container">
+      <div class="foot">
+        <div>
+          <strong style="color: rgba(255,255,255,.92);">© 2025 Dra. Josiane Ferreira</strong>
+          <div style="margin-top:6px;">Odontologia • Barra Mansa - RJ</div>
+        </div>
+        <div class="social" aria-label="Redes sociais">
+          <a href="https://wa.me/5524999545141" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://instagram.com/josianeferreiraodonto" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp (desktop) -->
+  <a class="whats-float" href="https://wa.me/5524999545141?text=Olá, gostaria de agendar uma consulta!" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <i class="fa-brands fa-whatsapp" style="font-size:1.7rem;"></i>
+  </a>
+
+  <!-- Mobile bottom bar -->
+  <div class="bottom-bar" aria-label="Atalhos">
+    <a class="btn-mini" href="#servicos"><i class="fa-solid fa-list-check"></i> Serviços</a>
+    <a class="btn-mini primary" href="https://wa.me/5524999545141?text=Olá, gostaria de agendar uma consulta!" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Agendar</a>
+  </div>
+
+  <script>
+    // ===== Scroll reveal =====
+    const revealEls = document.querySelectorAll('.reveal');
+    const io = new IntersectionObserver((entries) => {
+      for (const e of entries){
+        if (e.isIntersecting){
+          e.target.classList.add('visible');
+          io.unobserve(e.target);
+        }
+      }
+    }, {threshold: 0.12, rootMargin: "0px 0px -60px 0px"});
+    revealEls.forEach(el => io.observe(el));
+
+    // ===== Active nav link =====
+    const sections = ["sobre","diferenciais","servicos","depoimentos","contato"].map(id => document.getElementById(id));
+    const navLinks = Array.from(document.querySelectorAll('.menu a'));
+    function setActive(){
+      const y = window.scrollY + 130;
+      let current = null;
+      for (const s of sections){
+        if (!s) continue;
+        if (y >= s.offsetTop) current = s.id;
+      }
+      navLinks.forEach(a => a.classList.toggle('active', a.getAttribute('href') === "#" + current));
+    }
+    window.addEventListener('scroll', setActive, {passive:true});
+    setActive();
+
+    // ===== Smooth scroll offset (because fixed header) =====
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', (ev)=>{
+        const href = a.getAttribute('href');
+        const target = document.querySelector(href);
+        if(!target) return;
+        ev.preventDefault();
+        const top = target.getBoundingClientRect().top + window.scrollY - 100;
+        window.scrollTo({top, behavior: 'smooth'});
+      });
+    });
+
+    // ===== Mobile menu =====
+    const burger = document.getElementById('burger');
+    const overlay = document.getElementById('overlay');
+    const closeMenu = () => {
+      overlay.classList.remove('open');
+      overlay.setAttribute('aria-hidden','true');
+      burger.setAttribute('aria-expanded','false');
+      document.body.style.overflow = '';
+    };
+    const openMenu = () => {
+      overlay.classList.add('open');
+      overlay.setAttribute('aria-hidden','false');
+      burger.setAttribute('aria-expanded','true');
+      document.body.style.overflow = 'hidden';
+    };
+
+    burger?.addEventListener('click', ()=> overlay.classList.contains('open') ? closeMenu() : openMenu());
+    overlay?.addEventListener('click', (e)=>{ if(e.target === overlay) closeMenu(); });
+    overlay?.querySelectorAll('[data-close]')?.forEach(el => el.addEventListener('click', closeMenu));
+    window.addEventListener('keydown', (e)=>{ if(e.key === 'Escape') closeMenu(); });
+
+    // ===== Testimonials slider =====
+    const slides = document.getElementById('slides');
+    const prev = document.getElementById('prev');
+    const next = document.getElementById('next');
+    const dotsWrap = document.getElementById('dots');
+
+    const count = slides?.children?.length ?? 0;
+    let idx = 0;
+
+    function renderDots(){
+      if (!dotsWrap) return;
+      dotsWrap.innerHTML = '';
+      for (let i=0;i<count;i++){
+        const d = document.createElement('button');
+        d.className = 'dot' + (i===idx ? ' active' : '');
+        d.setAttribute('aria-label', 'Ir para depoimento ' + (i+1));
+        d.addEventListener('click', ()=> goTo(i));
+        dotsWrap.appendChild(d);
+      }
+    }
+
+    function goTo(i){
+      idx = (i + count) % count;
+      if (slides) slides.style.transform = `translateX(${-idx * 100}%)`;
+      renderDots();
+    }
+
+    prev?.addEventListener('click', ()=> goTo(idx - 1));
+    next?.addEventListener('click', ()=> goTo(idx + 1));
+
+    // Auto-play (pausa ao interagir)
+    let timer = null;
+    const startAuto = ()=>{
+      if (count <= 1) return;
+      timer = setInterval(()=> goTo(idx + 1), 6500);
+    };
+    const stopAuto = ()=> { if(timer) clearInterval(timer); timer = null; };
+    [prev,next,dotsWrap,slides].forEach(el => el && el.addEventListener('pointerdown', stopAuto));
+    [prev,next,dotsWrap,slides].forEach(el => el && el.addEventListener('pointerup', ()=>{ stopAuto(); startAuto(); }));
+
+    renderDots();
+    goTo(0);
+    startAuto();
+
+    // ===== Count-up (only for the 10+ visual) =====
+    const countEl = document.querySelector('[data-count]');
+    if (countEl){
+      const max = Number(countEl.getAttribute('data-count') || '10');
+      let n = 0;
+      const step = () => {
+        n += 1;
+        countEl.textContent = (n >= max ? max : n) + '+';
+        if (n < max) requestAnimationFrame(step);
+      };
+      // Trigger when visible
+      const counterIO = new IntersectionObserver((entries)=>{
+        entries.forEach(e=>{
+          if(e.isIntersecting){ step(); counterIO.disconnect(); }
+        });
+      }, {threshold: .6});
+      counterIO.observe(countEl);
+    }
+  </script>
+</body>
+</html>
