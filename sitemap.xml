@@ -1,55 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
   <url>
-    <loc>https://SEU-DOMINIO-AQUI.com.br/</loc>
+    <loc>http://www.drajosianeferreira.com.br/</loc>
     <priority>1.0</priority>
   </url>
+
   <url>
-    <loc>https://SEU-DOMINIO-AQUI.com.br/servicos/protocolo-total.html</loc>
+    <loc>http://www.drajosianeferreira.com.br/servicos/protocolo-total.html</loc>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>http://www.drajosianeferreira.com.br/servicos/implantes.html</loc>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>http://www.drajosianeferreira.com.br/servicos/reabilitacao-oral.html</loc>
+    <priority>0.95</priority>
+  </url>
+
+  <url>
+    <loc>http://www.drajosianeferreira.com.br/servicos/estetica-sorriso.html</loc>
     <priority>0.8</priority>
   </url>
+
   <url>
-    <loc>https://SEU-DOMINIO-AQUI.com.br/servicos/implantes.html</loc>
+    <loc>http://www.drajosianeferreira.com.br/servicos/clareamento-dental.html</loc>
     <priority>0.8</priority>
   </url>
+
   <url>
-    <loc>https://SEU-DOMINIO-AQUI.com.br/servicos/reabilitacao-oral.html</loc>
+    <loc>http://www.drajosianeferreira.com.br/servicos/facetas-lentes.html</loc>
     <priority>0.8</priority>
   </url>
+
   <url>
-    <loc>https://SEU-DOMINIO-AQUI.com.br/servicos/estetica-sorriso.html</loc>
+    <loc>http://www.drajosianeferreira.com.br/servicos/protese.html</loc>
     <priority>0.8</priority>
   </url>
+
   <url>
-    <loc>https://SEU-DOMINIO-AQUI.com.br/servicos/clareamento-dental.html</loc>
-    <priority>0.8</priority>
+    <loc>http://www.drajosianeferreira.com.br/servicos/canal-endodontia.html</loc>
+    <priority>0.7</priority>
   </url>
+
   <url>
-    <loc>https://SEU-DOMINIO-AQUI.com.br/servicos/facetas-lentes.html</loc>
-    <priority>0.8</priority>
+    <loc>http://www.drajosianeferreira.com.br/servicos/periodontia.html</loc>
+    <priority>0.7</priority>
   </url>
+
   <url>
-    <loc>https://SEU-DOMINIO-AQUI.com.br/servicos/protese.html</loc>
-    <priority>0.8</priority>
+    <loc>http://www.drajosianeferreira.com.br/servicos/cirurgia-odontologica.html</loc>
+    <priority>0.7</priority>
   </url>
+
   <url>
-    <loc>https://SEU-DOMINIO-AQUI.com.br/servicos/canal-endodontia.html</loc>
-    <priority>0.8</priority>
+    <loc>http://www.drajosianeferreira.com.br/servicos/bruxismo.html</loc>
+    <priority>0.7</priority>
   </url>
+
   <url>
-    <loc>https://SEU-DOMINIO-AQUI.com.br/servicos/periodontia.html</loc>
-    <priority>0.8</priority>
+    <loc>http://www.drajosianeferreira.com.br/servicos/ortodontia.html</loc>
+    <priority>0.7</priority>
   </url>
-  <url>
-    <loc>https://SEU-DOMINIO-AQUI.com.br/servicos/cirurgia-odontologica.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://SEU-DOMINIO-AQUI.com.br/servicos/bruxismo.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://SEU-DOMINIO-AQUI.com.br/servicos/ortodontia.html</loc>
-    <priority>0.8</priority>
-  </url>
+
 </urlset>
+
